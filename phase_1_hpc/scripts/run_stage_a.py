@@ -51,8 +51,16 @@ def load_existing_records(file_key: str) -> list:
     if not os.path.exists(path):
         return []
 
+    raw_records = []
     with open(path) as f:
-        raw_records = [json.loads(line) for line in f if line.strip()]
+        for line_num, line in enumerate(f, 1):
+            if not line.strip():
+                continue
+            try:
+                raw_records.append(json.loads(line))
+            except json.JSONDecodeError:
+                print(f"  WARNING: skipping corrupted line {line_num} in {file_key} (likely a partial write from an earlier crash)")
+                continue
 
     deduped = {}
     for r in raw_records:
@@ -60,10 +68,12 @@ def load_existing_records(file_key: str) -> list:
         deduped[key] = r
 
     if len(deduped) < len(raw_records):
-        print(f"  NOTE: {file_key} had {len(raw_records) - len(deduped)} duplicate record(s) — deduplicated.")
-        with open(path, "w") as f:
-            for r in deduped.values():
-                f.write(json.dumps(r) + "\n")
+        print(f"  {file_key}: {len(raw_records) - len(deduped)} duplicate record(s) found — deduplicated.")
+
+    # Rewrite the file cleanly, dropping any corrupted lines permanently
+    with open(path, "w") as f:
+        for r in deduped.values():
+            f.write(json.dumps(r) + "\n")
 
     return list(deduped.values())
 

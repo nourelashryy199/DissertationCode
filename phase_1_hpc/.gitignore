@@ -1,0 +1,6 @@
+outputs/
+demonstrations/
+data/eval_pools/
+__pycache__/
+*.out
+*.err

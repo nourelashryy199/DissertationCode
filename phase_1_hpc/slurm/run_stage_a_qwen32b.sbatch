@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=build_demos
+#SBATCH --job-name=stage_a_qwen32b
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:a100:1
-#SBATCH --time=00:30:00
-#SBATCH --mem=32G
-#SBATCH --output=build_demos_%j.out
-#SBATCH --error=build_demos_%j.err
+#SBATCH --gres=gpu:a100:2
+#SBATCH --time=4-00:00:00
+#SBATCH --mem=128G
+#SBATCH --output=stage_a_qwen32b_%j.out
+#SBATCH --error=stage_a_qwen32b_%j.err
 
 PYTHON=/users/msp25noe/.conda/envs/dissertation_env/bin/python3
 
@@ -17,6 +17,6 @@ export HF_HOME=/mnt/parscratch/users/$USER/hf_cache
 
 cd $DISSERTATION_ROOT
 
-echo "Starting build_demonstrations.py at $(date)"
-$PYTHON scripts/build_demonstrations.py
+echo "Starting run_stage_a.py at $(date)"
+$PYTHON -u scripts/run_stage_a.py --model Qwen/Qwen2.5-32B-Instruct --sample_size 45
 echo "Finished at $(date)"

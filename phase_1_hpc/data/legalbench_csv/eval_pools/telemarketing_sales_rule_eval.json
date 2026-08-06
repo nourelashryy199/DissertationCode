@@ -1,0 +1,247 @@
+[
+  {
+    "index": 0,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme Toys told a customer that its frisbees cost $10 each, when in fact the frisbees cost $12 each. The customer agreed to the sale and was charged $12. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 1,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme Toys told a customer that its frisbees cost $10 each, when in fact the frisbees did cost $10, but Acme Toys did not disclose that shipping would cost an additional $5. The customer agreed to the sale. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 2,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products told a customer that its brooms cost $12 each, and the brooms did in fact cost $12. The customer agreed to the sale. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 3,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products told a customer that it would sell them 4 brooms for $10, and that shipping would be $5. Then, the customer agreed to the sale. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 0,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products told a customer that its vacuums cost $150 each, and the vacuums did cost $150 each. After the customer agreed to pay, Acme Industrial Products told the customer that shipping would cost an additional $5. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 1,
+    "text": "Acme Sporting Goods is a telemarketer subject to the Telemarketing Sales Rule. Acme Sporting Goods convinced a customer to buy a basketball before disclosing that the basketballs cost $10 each.  Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 3,
+    "text": "Acme Sporting Goods is a telemarketer subject to the Telemarketing Sales Rule. Acme Sporting Goods told a customer that it would sell them a decent amount of basketballs for $55, and that shipping would be $5. Then, the customer agreed to the sale. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 4,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme told a customer that it would sell them 10 frisbees for $45, and that shipping would be free. When the customer asked what color the frisbees were, Acme Toys said that they came in a wide variety of colors. However, each pack of 10 frisbees were a uniform color. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 5,
+    "text": "Acme Vacations is a telemarketer subject to the Telemarketing Sales Rule. Acme convinced a customer to buy a vacation package to Alaska for $849, but did not disclose that the vacation must occur between the months of November and February. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 6,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme Toys sold 10 frisbees to a customer for $50, but before the sale told the customer that this price did not include an unspecified credit card processing fee. The customer then agreed to the sale. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 7,
+    "text": "Acme Sporting Goods is a telemarketer subject to the Telemarketing Sales Rule. Acme Sporting Goods sold 3 basketballs to a customer for $15, but after the sale informed the customer that this price did not include a $3 credit card processing fee. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 8,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme Toys sold 4 baseballs to a customer for $10, and before the sale told the customer that there was an additional $2 credit card processing fee. In fact, the credit card processing fee was $3.99. The customer agreed to the sale. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 9,
+    "text": "Acme Vacations is a telemarketer subject to the Telemarketing Sales Rule. Acme Vacations sold a vacation package to a customer for $450 for a trip to Paris. Acme Vacations never affirmatively told the customer that the trip was to Paris, Texas rather than Paris, France. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 10,
+    "text": "Acme Sporting Goods is a telemarketer subject to the Telemarketing Sales Rule. Acme Sporting Goods sold a customer 100 golf balls, but did not tell the customer that it did not accept refunds, exchanges, or cancellations. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 11,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme Toys sold a customer a frisbee, but did not tell the customer that it would only accept exchanges or refunds within 30 days of purchase. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 12,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products sold a customer a used lawnmower, and told the customer that, although it did not accept refunds or cancellations, that the customer could exchange products within a few months or so after delivery. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 13,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme Toys sold a customer four frisbees, and told the customer that they would have 90 days to exchange them, for any reason, when in fact Acme Toys only accepted exchanges for defective products. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 14,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products sold a customer a used lawnmower, but did not tell the customer the lawnmower would require $30 of additional parts to be operational. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 15,
+    "text": "Acme Homegoods is a telemarketer subject to the Telemarketing Sales Rule. Acme Homegoods told a customer that by purchasing a vase, the customer would automatically be entered to win a vacation to the Bahamas. Before the customer agreed to the sale, Acme Homegoods informed the customer that every vase sold would count as a separate entry into the contest. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 16,
+    "text": "Acme Sporting Goods is a telemarketer subject to the Telemarketing Sales Rule. Before completing a sale, Acme Sporting Goods told a customer that by purchasing a pack of golf balls, the customer would automatically be entered to win a vacation to the Bahamas. However, Acme Sporting Goods did not inform the customer that the customer could enter the drawing without purchasing any golf balls. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 17,
+    "text": "Acme Homegoods is a telemarketer subject to the Telemarketing Sales Rule. Before completing a sale, Acme Homegoods told a customer that by purchasing a vase, the customer would automatically be entered to win a vacation to the Bahamas. Acme Homegoods informed the customer that there was a substantial chance that the customer would win, when in fact the odds were about 1 in 100,000. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 18,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Before completing a sale, Acme Toys told a customer that by purchasing a frisbee, the customer would automatically be entered to win a vacation to Spain. Acme Toys informed the customer that the customer could enter the contest without purchasing a frisbee, but did not tell the customer how this could be accomplished or who the customer should contact for these instructions.  Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 19,
+    "text": "Acme Homegoods is a telemarketer subject to the Telemarketing Sales Rule. Before completing a sale, Acme Homegoods told a customer that by purchasing a vase, the customer would automatically be entered to win a vacation to London. Acme Homegoods did not tell the customer that the prize did not include transportation to London.  Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "Yes"
+  },
+  {
+    "index": 21,
+    "text": "Acme Record Exchange is a telemarketer subject to the Telemarketing Sales Rule. Acme Record Exchange convinced a customer to join its \"Record of the Month\" subscription for $5 per month until cancelled. Acme Record Exchange told the customer that the records would represent a variety of genres, when in fact they would all be jazz records. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "Yes"
+  },
+  {
+    "index": 22,
+    "text": "Acme Record Exchange is a telemarketer subject to the Telemarketing Sales Rule. Acme Record Exchange convinced a customer to join its \"Record of the Month\" subscription for $35 per month until cancelled. Acme Record Exchange did not inform the customer that shipping would be an additional $3.99 per month, and the customer did not inquire about shipping charges.  Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "Yes"
+  },
+  {
+    "index": 23,
+    "text": "Acme Record Exchange is a telemarketer subject to the Telemarketing Sales Rule. Acme Record Exchange convinced a customer to join its \"Record of the Month\" subscription for a free, one month trial, and informed the customer that the subscription would automatically renew at $15 per month unless the customer cancelled. Acme Records did not inform the customer that cancellation required the payment of a $0.99 processing fee. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "Yes"
+  },
+  {
+    "index": 24,
+    "text": "Acme Record Exchange is a telemarketer subject to the Telemarketing Sales Rule. Acme Record Exchange convinced a customer to join its \"Record of the Month\" subscription for $15 per month. Before completing the sale, Acme Record Exchange made the baseless claim that Quincy Jones was one of its co founders. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "Yes"
+  },
+  {
+    "index": 25,
+    "text": "Acme Debt Relief is a telemarketer subject to the Telemarketing Sales Rule. Acme Debt Relief did not inform a customer that its debt payment plan would result in some missed payments to creditors. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "Yes"
+  },
+  {
+    "index": 26,
+    "text": "Acme Debt Relief is a telemarketer subject to the Telemarketing Sales Rule. Acme Debt Relief claimed that it was affiliated with the Federal Trade Commission, which is untrue. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "Yes"
+  },
+  {
+    "index": 27,
+    "text": "Acme Debt Relief is a telemarketer subject to the Telemarketing Sales Rule. Before successfully selling its services to a customer, Acme Debt Relief claimed without basis that 80% of its customers resolve their debts within five years. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "Yes"
+  },
+  {
+    "index": 28,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme told a customer that it would sell them 2 frisbees for $15, and that shipping would be free. Acme did not disclose that both of the frisbees were red, but the customer agreed to the sale without inquiring about the color of the frisbees. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 29,
+    "text": "Acme Vacations is a telemarketer subject to the Telemarketing Sales Rule. Acme told a customer that it was selling vacation packages to Singapore for $1,549, but that airfare was not included in this price. The customer agreed to the sale. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 30,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products sold a vacuum to a customer for $300, but before the sale told the customer that this price did not include a $5 credit card processing fee. The customer agreed to the sale. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 31,
+    "text": "Acme Vacations is a telemarketer subject to the Telemarketing Sales Rule. Acme Vacations sold a vacation package to a customer for $550 for a trip to New Orleans in July. Acme Vacations never affirmatively told the customer that New Orleans is very humid that time of year. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 32,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products sold a customer 25 surge protectors, but did not inform the customer that it would accept exchanges, refunds, or cancellations. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 33,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme Toys sold a customer 30 stuffed animals, and informed the customer that it would accept exchanges, refunds, or cancellations. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 34,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products sold a customer a used lawnmower, and told the customer that it would accept exchanges but not refunds. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 35,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products sold a customer a used lawnmower, but told the customer that it would not accept refunds. Acme Industrial Products failed to mention that it would accept exchanges. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 36,
+    "text": "Acme Sporting Goods is a telemarketer subject to the Telemarketing Sales Rule. Acme Sporting Goods sold a customer a basketball, but told the customer that it would only accept exchanges or refunds within 90 days of purchase. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 37,
+    "text": "Acme Industrial Products is a telemarketer subject to the Telemarketing Sales Rule. Acme Industrial Products sold a customer a used lawnmower, and told the customer that, although it did not accept refunds or cancellations, the customer would have 90 days to exchange a product that was defective. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 38,
+    "text": "Acme Toys is a telemarketer subject to the Telemarketing Sales Rule. Acme Toys sold a customer a frisbee. It disclosed the brand of the frisbee, but did not tell the customer the frisbee was manufactured in Portugal. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 39,
+    "text": "Acme Homegoods is a telemarketer subject to the Telemarketing Sales Rule. Acme Homegoods told a customer that by purchasing a vase, the customer would automatically be entered to win a vacation to the Bahamas. Before the customer agreed to the sale, Acme Homegoods informed the customer how the odds would be calculated, that purchasing additional vases would not increase the chance of winning, and described how one could enter the contest without making any purchases. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 40,
+    "text": "Acme Sporting Goods is a telemarketer subject to the Telemarketing Sales Rule. Acme Sporting Goods told a customer that by purchasing a basketball, the customer would automatically be entered to win a Ford Mustang. Before the customer agreed to the sale, Acme Sporting Goods informed the customer how the odds would be calculated, that purchasing additional basketballs would not increase the chance of winning, and described how one could enter the contest without making any purchases. However, Acme Sporting Goods failed to tell the customer that the Mustang was last year's model. Is this a violation of the Telemarketing Sales Rule?",
+    "answer": "No"
+  },
+  {
+    "index": 41,
+    "text": "Acme Record Exchange is a telemarketer subject to the Telemarketing Sales Rule. Acme Record Exchange convinced a customer to join its \"Record of the Month\" subscription for a free, one month trial, which would automatically be cancelled unless the customer later agreed to a one year subscription. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "No"
+  },
+  {
+    "index": 42,
+    "text": "Acme Wines is a telemarketer subject to the Telemarketing Sales Rule. Acme Wines convinced a customer to join its \"Wine of the Month\" subscription for a free, one month trial, and told the customer that the subscription would automatically renew for $15 per month unless the customer cancelled. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "No"
+  },
+  {
+    "index": 43,
+    "text": "Acme Wines is a telemarketer subject to the Telemarketing Sales Rule. Acme Wines convinced a customer to join its \"Wine of the Month\" subscription for a free, one month trial, which would automatically be cancelled unless the customer later agreed to a one year subscription. Acme Wines did not inform the customer that most of the wines would be domestic.  Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "No"
+  },
+  {
+    "index": 44,
+    "text": "Acme Record Exchange is a telemarketer subject to the Telemarketing Sales Rule. Acme Record Exchange convinced a customer to join its \"Record of the Month\" subscription for $35 per month until cancelled. Acme Record Exchange did not inform the customer that all of the records sent would be from contemporary artists, and the customer did not inquire about the genre of the records.  Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "No"
+  },
+  {
+    "index": 45,
+    "text": "Acme Wines is a telemarketer subject to the Telemarketing Sales Rule. Acme Wines convinced a customer to join its \"Wine of the Month\" subscription for a free, one month trial, and informed the customer that the subscription would automatically renew at $15 per month unless the customer cancelled by sending a letter to Acme Wine's address by certified mail. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "No"
+  },
+  {
+    "index": 46,
+    "text": "Acme Debt Relief is a telemarketer subject to the Telemarketing Sales Rule. Acme Debt Relief failed to disclose to a customer that it is based in Canada. Is this a violation of the Telemarketing Sales Rule?   ",
+    "answer": "No"
+  }
+]

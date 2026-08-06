@@ -1,0 +1,7 @@
+task_id,category,test_size,n_labels,source_dataset,phase
+cuad_termination_for_convenience,interpretation,430,2,LegalBench,pilot
+learned_hands_torts,issue-spotting,432,2,LegalBench,pilot
+legal_reasoning_causality,rhetorical-understanding,55,2,LegalBench,pilot
+abercrombie,rule-application,95,5,LegalBench,pilot
+contract_qa,rule-conclusion,80,2,LegalBench,pilot
+telemarketing_sales_rule,rule-recall,47,2,LegalBench,pilot

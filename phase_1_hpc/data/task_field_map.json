@@ -1,0 +1,8 @@
+{
+  "learned_hands_torts": {"context": "text", "question": null},
+  "telemarketing_sales_rule": {"context": "text", "question": null},
+  "abercrombie": {"context": "text", "question": null},
+  "contract_qa": {"context": "text", "question": "question"},
+  "cuad_termination_for_convenience": {"context": "text", "question": null},
+  "legal_reasoning_causality": {"context": "text", "question": null}
+}

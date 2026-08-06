@@ -1,0 +1,8 @@
+{
+  "learned_hands_torts": "Does this post describe a potential tort law issue?",
+  "telemarketing_sales_rule": "Does this scenario describe a violation of the Telemarketing Sales Rule?",
+  "abercrombie": "How should this trademark be classified on the Abercrombie distinctiveness spectrum?",
+  "contract_qa": null,
+  "cuad_termination_for_convenience": "Does this contract clause permit termination for convenience?",
+  "legal_reasoning_causality": "Does this passage describe legal reasoning that relies on statistical or causal inference?"
+}

@@ -173,7 +173,21 @@ def main():
         savefig(fig, "matrix_transfer_penalty", safe_model_name)
     else:
         print(f"WARNING: {penalty_path} not found — run analysis.py first for the Transfer Penalty matrix.")
-
+    # ============================================================
+    # 12. TRANSFER PENALTY MATRIX (NORMALIZED, 0-1 scale) — heatmap
+    # ============================================================
+    penalty_norm_path = os.path.join(config.RESULTS_DIR, f"transfer_penalty_matrix_normalized__{safe_model_name}.csv")
+    if os.path.exists(penalty_norm_path):
+        penalty_matrix_norm = pd.read_csv(penalty_norm_path, index_col=0)
+        fig, ax = plt.subplots(figsize=(9, 7))
+        sns.heatmap(penalty_matrix_norm, annot=True, fmt=".3f", cmap="RdYlGn_r", vmin=0, vmax=1,
+                    cbar_kws={"label": "Normalized Penalty(i -> j)"}, ax=ax)
+        ax.set_xlabel("Category j (strategy applied TO)")
+        ax.set_ylabel("Category i (champion strategy FROM)")
+        ax.set_title(f"Prompt Transfer Penalty Matrix — Normalized 0-1 Scale ({model_name})")
+        savefig(fig, "matrix_transfer_penalty_normalized", safe_model_name)
+    else:
+        print(f"WARNING: {penalty_norm_path} not found — run analysis.py first for the normalized Transfer Penalty matrix.")
     print("\nAll visualizations generated.")
 
 

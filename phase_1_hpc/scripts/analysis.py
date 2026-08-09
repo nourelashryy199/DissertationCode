@@ -69,7 +69,25 @@ def compute_fit_scores(run_level: pd.DataFrame) -> pd.DataFrame:
     )
 
     return summary
+def add_normalized_fit_scores(fit_scores: pd.DataFrame) -> pd.DataFrame:
+    """
+    Min-max scales fit_score to a 0-1 range WITHIN each category
+    (across its 13 strategies), producing an interpretable, bounded
+    companion metric alongside the raw (unbounded) Sharpe-style
+    fit_score. This addresses the raw score's scale sensitivity —
+    a small std-dev denominator (from only 5 run-level observations)
+    can inflate raw fit_score to large magnitudes that are correct
+    but hard to compare intuitively across categories.
+    """
+    def minmax(group):
+        lo, hi = group["fit_score"].min(), group["fit_score"].max()
+        span = hi - lo
+        group["fit_score_normalized"] = (
+            (group["fit_score"] - lo) / span if span > 1e-9 else 0.5
+        )
+        return group
 
+    return fit_scores.groupby("category", group_keys=False).apply(minmax)
 
 def identify_champions(fit_scores: pd.DataFrame) -> pd.Series:
     """For each category, the strategy with the highest Fit Score."""
@@ -78,17 +96,16 @@ def identify_champions(fit_scores: pd.DataFrame) -> pd.Series:
     return champions
 
 
-def compute_transfer_penalty(fit_scores: pd.DataFrame, champions: pd.Series) -> pd.DataFrame:
+def compute_transfer_penalty(fit_scores: pd.DataFrame, champions: pd.Series, score_col: str = "fit_score") -> pd.DataFrame:
     """
     Penalty(i -> j) = FitScore(j, champion_j) - FitScore(j, champion_i)
-    Diagonal (i == j) is 0 by construction (a category's own champion
-    applied to itself has zero penalty). Off-diagonal cells show the
-    cost of using category i's champion strategy on category j's tasks.
+    score_col selects which column to use: "fit_score" (raw) or
+    "fit_score_normalized" (0-1 scaled, more interpretable).
     """
     categories = list(champions.index)
     matrix = pd.DataFrame(index=categories, columns=categories, dtype=float)
 
-    fit_lookup = fit_scores.set_index(["category", "strategy"])["fit_score"]
+    fit_lookup = fit_scores.set_index(["category", "strategy"])[score_col]
 
     for j in categories:
         champion_j_score = fit_lookup.get((j, champions[j]), np.nan)
@@ -103,8 +120,6 @@ def compute_transfer_penalty(fit_scores: pd.DataFrame, champions: pd.Series) -> 
                 matrix.loc[i, j] = champion_j_score - champion_i_on_j_score
 
     return matrix
-
-
 def main():
     model_name = config.get_model_name_from_args().model
     safe_model_name = model_name.replace("/", "_")
@@ -120,6 +135,7 @@ def main():
 
     run_level = compute_run_level_accuracy(df)
     fit_scores = compute_fit_scores(run_level)
+    fit_scores = add_normalized_fit_scores(fit_scores)
     champions = identify_champions(fit_scores)
 
     print("\n=== Category Champions (highest Fit Score) ===")
@@ -128,7 +144,11 @@ def main():
     print("\n=== Fit Scores (all category x strategy pairs) ===")
     print(fit_scores.sort_values(["category", "fit_score"], ascending=[True, False]).to_string(index=False))
 
-    penalty_matrix = compute_transfer_penalty(fit_scores, champions)
+    penalty_matrix = compute_transfer_penalty(fit_scores, champions, score_col="fit_score")
+    penalty_matrix_normalized = compute_transfer_penalty(fit_scores, champions, score_col="fit_score_normalized")
+
+    print("\n=== Prompt Transfer Penalty Matrix (NORMALIZED, 0-1 scale): Penalty(i -> j) ===")
+    print(penalty_matrix_normalized.round(3))
     print("\n=== Prompt Transfer Penalty Matrix: Penalty(i -> j) ===")
     print("Rows = origin strategy's category (i), Columns = applied-to category (j)")
     print(penalty_matrix.round(3))
@@ -153,6 +173,7 @@ def main():
     fit_scores.to_csv(os.path.join(config.RESULTS_DIR, f"fit_scores__{safe_model_name}.csv"), index=False)
     champions.to_csv(os.path.join(config.RESULTS_DIR, f"champions__{safe_model_name}.csv"))
     penalty_matrix.to_csv(os.path.join(config.RESULTS_DIR, f"transfer_penalty_matrix__{safe_model_name}.csv"))
+    penalty_matrix_normalized.to_csv(os.path.join(config.RESULTS_DIR, f"transfer_penalty_matrix_normalized__{safe_model_name}.csv"))
     risk_summary.to_csv(os.path.join(config.RESULTS_DIR, f"risk_summary__{safe_model_name}.csv"))
 
     print(f"\nSaved all results to {config.RESULTS_DIR}")

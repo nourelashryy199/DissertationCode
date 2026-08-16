@@ -23,6 +23,14 @@ TOP_P = 0.95
 N_REPHRASINGS = 3
 N_RUNS = 5
 
+# --- Evaluation subsampling ---
+# Shared source of truth for the per-task evaluation subsample size,
+# so run_stage_a.py's --sample_size CLI arg and rescore.py's
+# expected_output lookup can never silently drift out of sync.
+# Value fixed at 45 (smallest of the six selected tasks' test sets,
+# telemarketing_sales_rule, with a small safety margin below it).
+EVAL_SAMPLE_SIZE = 45
+
 # --- LegalBench reasoning-type categories ---
 CATEGORIES = [
     "issue-spotting",

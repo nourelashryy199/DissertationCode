@@ -23,9 +23,9 @@ def main():
     model_name = config.get_model_name_from_args().model
     safe_model_name = model_name.replace("/", "_")
 
-    parsed_path = os.path.join(config.PARSED_DIR, f"all_generations_parsed__{safe_model_name}.csv")
+    parsed_path = os.path.join(config.PARSED_DIR, f"all_generations_parsed_rescored__{safe_model_name}.csv")
     if not os.path.exists(parsed_path):
-        print(f"ERROR: {parsed_path} not found. Run parse_predictions.py first.")
+        print(f"ERROR: {parsed_path} not found. Run parse_predictions.py then rescore.py first.")
         return
 
     df = pd.read_csv(parsed_path)

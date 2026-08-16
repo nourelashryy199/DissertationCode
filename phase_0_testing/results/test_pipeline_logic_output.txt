@@ -1,0 +1,38 @@
+
+=== 1. Schema objects ===
+[PASS] LegalTask constructs with expected fields
+[PASS] Demonstration list has expected length (mirrors real UNIFORM_K=2 case)
+[PASS] Demonstration.render() includes Final Answer line
+
+=== 2. Strategy prompt construction ===
+[PASS] 'zero_shot' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'one_shot' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'few_shot_2' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'few_shot_3' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'role_based' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'structured' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'cot' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'irac' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'crac' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'creac' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'cleo' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'treacc' builds a non-empty prompt containing the Final Answer instruction
+[PASS] 'ireac' builds a non-empty prompt containing the Final Answer instruction
+[PASS] few_shot_2 and few_shot_3 produce IDENTICAL prompts when only 2 demos are available (expected/known limitation — see Methodology; should stay TRUE until demo count changes)
+[PASS] zero_shot produces 3 distinct rephrasing variants
+[PASS] 'irac' prompt mentions all its canonical steps ['Issue', 'Rule', 'Application', 'Conclusion']
+[PASS] 'crac' prompt mentions all its canonical steps ['Conclusion', 'Rule', 'Application', 'Conclusion']
+[PASS] 'creac' prompt mentions all its canonical steps ['Conclusion', 'Rule', 'Explanation', 'Application', 'Conclusion']
+[PASS] 'cleo' prompt mentions all its canonical steps ['Claim', 'Law', 'Evaluation', 'Outcome']
+[PASS] 'treacc' prompt mentions all its canonical steps ['Topic', 'Rule', 'Explanation', 'Analysis', 'Counterarguments', 'Conclusion']
+[PASS] 'ireac' prompt mentions all its canonical steps ['Issue', 'Rule', 'Explanation', 'Application', 'Conclusion']
+
+=== 3. Answer parsing edge cases ===
+[PASS] extracts a simple, well-formed final answer
+[PASS] returns None when no Final Answer line is present
+[PASS] takes the LAST occurrence when Final Answer appears multiple times (framework restatement case)
+[PASS] strips surrounding whitespace from the extracted answer
+[PASS] extraction is exact-match (trailing period NOT stripped — normalization happens in rescore.py)
+
+============================================================
+All checks passed.

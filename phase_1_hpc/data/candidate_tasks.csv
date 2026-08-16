@@ -1,0 +1,16 @@
+category,task_name,test_size,columns,n_unique_labels,unique_label_ratio,is_classification
+interpretation,cuad_termination_for_convenience,430,"['index', 'text', 'answer', 'document_name']",2,0.0047,True
+interpretation,cuad_governing_law,876,"['index', 'text', 'answer', 'document_name']",2,0.0023,True
+issue-spotting,learned_hands_torts,432,"['index', 'text', 'answer']",2,0.0046,True
+issue-spotting,learned_hands_family,2265,"['index', 'text', 'answer']",2,0.0009,True
+issue-spotting,learned_hands_housing,4494,"['index', 'text', 'answer']",2,0.0004,True
+rhetorical-understanding,legal_reasoning_causality,55,"['index', 'answer', 'text']",2,0.0364,True
+rhetorical-understanding,overruling,2394,"['index', 'answer', 'text']",2,0.0008,True
+rule-application,abercrombie,95,"['index', 'answer', 'text']",5,0.0526,True
+rule-application,diversity_1,300,"['index', 'text', 'answer', 'parties_are_diverse', 'aic_is_met']",2,0.0067,True
+rule-application,diversity_2,300,"['index', 'text', 'answer', 'parties_are_diverse', 'aic_is_met']",2,0.0067,True
+rule-conclusion,contract_qa,80,"['index', 'question', 'text', 'answer']",2,0.025,True
+rule-conclusion,consumer_contracts_qa,396,"['index', 'contract', 'question', 'answer']",2,0.0051,True
+rule-recall,telemarketing_sales_rule,47,"['index', 'text', 'answer']",2,0.0426,True
+rule-recall,citation_prediction_classification,108,"['index', 'text', 'citation', 'answer']",2,0.0185,True
+rule-recall,international_citizenship_questions,9306,"['index', 'question', 'answer']",2,0.0002,True

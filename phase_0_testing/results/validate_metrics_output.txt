@@ -1,0 +1,41 @@
+=== Scenario 1: Does Fit Score reward CONSISTENCY, not just raw accuracy? ===
+
+  volatile: mean_accuracy=0.620, std=0.356, fit_score=0.617
+  stable:   mean_accuracy=0.550, std=0.016, fit_score=9.487
+
+[PASS] Sanity: 'volatile' genuinely has higher RAW accuracy than 'stable' (by construction)
+[PASS] Fit Score REVERSES the raw-accuracy ranking: 'stable' scores higher despite lower mean accuracy
+
+=== Scenario 2: Does a genuinely WORSE strategy get a negative Fit Score? ===
+
+  bad_strategy: mean_accuracy=0.300, accuracy_gain=-0.200, fit_score=-12.649
+
+[PASS] bad_strategy genuinely underperforms zero_shot (negative gain, by construction)
+[PASS] Fit Score is correctly negative for a genuinely worse strategy
+
+=== Scenario 3: Deterministic tie-breaking when two strategies are equal ===
+
+  strategy_a fit_score=28.2843, strategy_b fit_score=28.2843
+  champion selected: strategy_a
+
+[PASS] Tied strategies genuinely produce equal Fit Scores
+[PASS] Champion selection resolves ties deterministically (no crash/ambiguity)
+
+=== Scenario 4: Hand-verified Transfer Penalty value across 3 categories ===
+
+  Champions: {'Cat1': 'strat_X', 'Cat2': 'strat_Y'}
+
+         Cat1     Cat2
+Cat1   0.0000  34.9631
+Cat2  51.3163   0.0000
+
+  Hand-calculated Penalty(Cat1 -> Cat2) = 34.9631
+  Matrix's Penalty(Cat1 -> Cat2)        = 34.9631
+
+[PASS] strat_X correctly identified as Cat1's champion (by construction)
+[PASS] strat_Y correctly identified as Cat2's champion (by construction)
+[PASS] Transfer Penalty matrix value matches the hand-calculated formula exactly
+[PASS] Penalty is positive: applying Cat1's champion to Cat2 is genuinely worse than Cat2's own champion
+
+============================================================
+All metric validation checks passed.

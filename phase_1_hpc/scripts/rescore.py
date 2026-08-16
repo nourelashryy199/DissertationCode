@@ -37,7 +37,6 @@ def main():
 
     expected_lookup = {}  # instance task_id (e.g. "abercrombie_17") -> true label
     import random
-    SAMPLE_SIZE = 45  # must match the --sample_size used in run_stage_a.py
 
     for _, row in manifest_df.iterrows():
         base_task_id = row["task_id"]
@@ -46,7 +45,7 @@ def main():
             pool = json.load(f)
         pool = pool.copy()
         random.Random(config.CLUSTERING_RANDOM_STATE).shuffle(pool)
-        pool = pool[:SAMPLE_SIZE]
+        pool = pool[:config.EVAL_SAMPLE_SIZE]
         for idx, r in enumerate(pool):
             expected_lookup[f"{base_task_id}_{idx}"] = r.get("answer", "")
 
